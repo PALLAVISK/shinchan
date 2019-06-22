@@ -1,0 +1,15 @@
+route.demo-of-routing:
+  path: '/routing-form' 
+  defaults:
+    _controller: '\Drupal\route\Controller\HelloController::content' 
+    _title: 'ROUTING Form'
+  requirements:
+    _permission: 'access content'
+
+route.demo-of-routing2:
+  path: '/dynamicroute/{user}' 
+  defaults:
+    _controller: '\Drupal\route\Controller\DynamicRoute::content' 
+    _title: 'ROUTING Form'
+  requirements:
+    _permission: 'access content'
